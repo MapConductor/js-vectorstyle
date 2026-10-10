@@ -1,0 +1,37 @@
+{
+  "name": "@mapconductor/react-vectorstyle",
+  "version": "0.1.0",
+  "description": "Declarative adjustments to a MapLibre style, as a MapConductor map's appearance",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --external @mapconductor/vectorstyle --external @mapconductor/js-sdk-core",
+    "clean": "rm -rf dist",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "keywords": [
+    "maps",
+    "maplibre",
+    "style",
+    "typescript"
+  ],
+  "author": "MapConductor",
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@mapconductor/js-sdk-core": "*",
+    "@mapconductor/vectorstyle": "*"
+  }
+}
