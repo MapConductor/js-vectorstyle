@@ -12,8 +12,10 @@ export type {
     StyleRulesBuilder,
     StyleSelector,
 } from './StyleRules';
-export { createVectorStyle } from './VectorStyle';
+export { compileStyle, createVectorStyle } from './VectorStyle';
 export type {
+    CompiledStyle,
+    StyleAffects,
     UnsupportedPolicy,
     VectorStyleOptions,
     VectorStyleRasterisation,

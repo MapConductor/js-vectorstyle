@@ -14,10 +14,12 @@
   },
   "files": [
     "dist",
+    "vendor",
     "README.md"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --external @mapconductor/vectorstyle --external @mapconductor/js-sdk-core",
+    "prebuild": "node ../scripts/fetch-vector-assets.mjs",
+    "build": "tsup",
     "clean": "rm -rf dist",
     "test": "node --test \"test/*.test.mjs\""
   },
@@ -31,7 +33,6 @@
   "license": "Apache-2.0",
   "sideEffects": false,
   "peerDependencies": {
-    "@mapconductor/js-sdk-core": "*",
-    "@mapconductor/vectorstyle": "*"
+    "@mapconductor/js-sdk-core": "^0.2.1"
   }
 }

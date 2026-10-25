@@ -9,7 +9,13 @@ import {
     type NativeStyleDescriptor,
     type StyleMutation,
 } from '@mapconductor/js-sdk-core';
-import { compileStyle, type CompiledStyle, type StyleAffects } from '@mapconductor/vectorstyle';
+import { compileStyle, type CompiledStyle, type StyleAffects } from '../vendor/vectorstyle/dist/index.js';
+
+// The compiler ships inside this package (vendor/, fetched from
+// MapConductor/vectortile's release). react-vectortile compiles through these
+// rather than carrying a second copy of the wasm.
+export { compileStyle };
+export type { CompiledStyle, StyleAffects };
 
 import { NO_STYLE_RULES, type StyleRules } from './StyleRules';
 

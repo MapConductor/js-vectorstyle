@@ -1,5 +1,6 @@
 import { MapStyleHost, MapViewStyle } from '@mapconductor/js-sdk-core';
-import { StyleAffects } from '@mapconductor/vectorstyle';
+import { StyleAffects } from '../vendor/vectorstyle/dist/index.js';
+export { CompiledStyle, StyleAffects, compileStyle } from '../vendor/vectorstyle/dist/index.js';
 
 /**
  * What to change about a style, and where.
