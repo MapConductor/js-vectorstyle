@@ -269,4 +269,5 @@ interface VectorStyleOptions {
  */
 declare function createVectorStyle(options?: VectorStyleOptions): MapViewStyle;
 
-export { LayerRole, NO_STYLE_RULES, type StyleColorFilter, type StyleLayerKind, type StylePatch, type StyleRules, type StyleRulesBuilder, type StyleSelector, type UnsupportedPolicy, type VectorStyleOptions, type VectorStyleRasterisation, type VectorStyleRasteriser, type VectorStyleSource, buildStyleRules, createVectorStyle, parseStyleRules };
+export { LayerRole, NO_STYLE_RULES, buildStyleRules, createVectorStyle, parseStyleRules };
+export type { StyleColorFilter, StyleLayerKind, StylePatch, StyleRules, StyleRulesBuilder, StyleSelector, UnsupportedPolicy, VectorStyleOptions, VectorStyleRasterisation, VectorStyleRasteriser, VectorStyleSource };
