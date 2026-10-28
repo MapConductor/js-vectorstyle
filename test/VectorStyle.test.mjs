@@ -144,7 +144,7 @@ before(async () => {
     // its binary, so the bytes are handed over directly.
     const here = new URL('./', import.meta.url);
     await loadStyleWasm(
-        await readFile(fileURLToPath(new URL('../../vectorstyle/pkg/mvt_style_wasm_bg.wasm', here))),
+        await readFile(fileURLToPath(new URL('../vendor/vectorstyle/pkg/mvt_style_wasm_bg.wasm', here))),
     );
 });
 
