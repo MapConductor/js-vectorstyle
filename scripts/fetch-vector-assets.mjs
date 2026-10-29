@@ -11,8 +11,8 @@
  * asset that does not match its checksum is refused. `prebuild` runs this, so a
  * clean checkout builds, tests and publishes the same bytes.
  *
- * react-sdk's react-vectortile fetches the renderer from the same release the
- * same way (react-sdk/scripts/fetch-vector-assets.mjs); keep the two tags in step.
+ * react-vectortile fetches the renderer from the same release the same way,
+ * from its own copy of this script; keep the two tags in step.
  *
  * To try a local build of mapconductor-vectortile instead, point
  * MAPCONDUCTOR_VECTORTILE_DIR at that checkout (after `npm run build` in its

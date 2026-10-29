@@ -22,7 +22,7 @@ It has no framework dependency, only `@mapconductor/js-sdk-core`.
 - **Maps that draw MapLibre styles themselves** (MapLibre, Mapbox and MapTiler)
   take the adjustment in place, without reloading the map.
 - **Every other map** draws it through
-  [`@mapconductor/react-vectortile`](https://github.com/MapConductor/react-sdk/tree/develop/react-vectortile),
+  [`@mapconductor/react-vectortile`](https://github.com/MapConductor/react-vectortile),
   which renders the style to raster tiles and compiles the rules with this
   package.
 
