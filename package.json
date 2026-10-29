@@ -1,6 +1,6 @@
 {
   "name": "@mapconductor/js-vectorstyle",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Declarative adjustments to a MapLibre style, as a MapConductor map's appearance",
   "type": "module",
   "main": "./dist/index.js",
@@ -39,7 +39,7 @@
   },
   "sideEffects": false,
   "peerDependencies": {
-    "@mapconductor/js-sdk-core": "^0.2.1"
+    "@mapconductor/js-sdk-core": "^0.3.0"
   },
   "devDependencies": {
     "tsup": "^9.0.0",
